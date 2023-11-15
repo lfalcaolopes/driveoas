@@ -1,15 +1,15 @@
-import Header from "./components/Header"
-import SelectPermission from "./pages/selectPermission"
+import Home from "./pages/home"
 
 function App() {
 
   return (
     <div className="h-screen flex flex-col">
-      <Header />
+      {/* <Header /> */}
       <div className="w-screen h-full flex">
         {/* <Login /> */}
         {/* <SignUp /> */}
-        <SelectPermission />
+        {/* <SelectPermission /> */}
+        <Home />
       </div>
     </div>
   )
