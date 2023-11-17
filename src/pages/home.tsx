@@ -1,4 +1,5 @@
-import { List, Upload } from "@phosphor-icons/react"
+import { List } from "@phosphor-icons/react"
+import MyFiles from "../components/homeComponents/MyFiles"
 import SearchBar from "../components/searchBar"
 
 function Home() {
@@ -26,7 +27,9 @@ function Home() {
             </div>
           
             {/* <Placeholder /> */}
-            <Upload />
+            {/* <FileUpload /> */}
+            <MyFiles />
+            {/* <UnderConstruction /> */}
           </div>
         </div>
 
