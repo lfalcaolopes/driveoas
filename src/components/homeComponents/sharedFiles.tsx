@@ -1,6 +1,6 @@
 
 import { ShareNetwork, Trash } from "@phosphor-icons/react"
-import FileCover from "../../assets/fileCover.png"
+import FileCover from "../../assets/FileCover.png"
 
 
 function SharedFiles() {
@@ -12,7 +12,7 @@ function SharedFiles() {
       <div className="bg-slate-100 p-4 rounded-2xl text-slate-800 w-80 flex flex-col gap-4 cursor-pointer">
         <img src={FileCover} alt="" className="rounded-xl"/>
         <div className="flex justify-between items-center">
-          <p className="font-bold ">Drive OA's</p>
+          <p className="font-bold ">Manual do estudante</p>
 
           <div className="flex items-center gap-4">
             <Trash size={20} weight="bold" className="cursor-pointer"/>
