@@ -1,4 +1,5 @@
 import { SubmitHandler, useForm } from "react-hook-form"
+import { Link } from "react-router-dom"
 
 interface InputForm {
   email: string
@@ -36,7 +37,7 @@ function Login() {
 
           <p>Esqueceu a senha? <span className="underline">Redefinir</span></p>
 
-          <button className="px-8 py-2 bg-blue-500 text-white rounded" type="submit">Login</button>
+          <Link to="/dashboard" className="px-8 py-2 bg-blue-500 text-white rounded" type="submit">Login</Link>
         </form>
       </div>
   )

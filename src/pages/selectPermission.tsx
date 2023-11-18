@@ -1,4 +1,5 @@
 import { BookBookmark } from '@phosphor-icons/react'
+import { Link } from 'react-router-dom'
 import secSaude from '../assets/secSaude.png'
 
 function SelectPermission() {
@@ -14,7 +15,12 @@ function SelectPermission() {
             <button className="px-8 py-2 bg-green-800 text-white rounded">Aluno</button>
           </div>
 
-          <button className="px-8 py-2 bg-blue-500 text-white rounded" type="submit">Entrar</button>
+          <Link 
+            to="/signup" 
+            className="px-8 py-2 bg-blue-500 text-white rounded flex justify-center items-center"
+            type="submit">
+              Entrar
+          </Link>
           <img className='' src={secSaude} alt="" />
         </div>
         <div className='flex flex-grow-2 gap-12 justify-center items-center w-full bg-blue-700 p-8'>

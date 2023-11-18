@@ -1,4 +1,5 @@
 import { SubmitHandler, useForm } from "react-hook-form"
+import { Link } from "react-router-dom"
 
 interface InputForm {
   fullName: string
@@ -18,7 +19,7 @@ function SignUp() {
   return (
     <div className="w-full flex flex-col justify-center items-center gap-6 mb-32">
       <h1 className='font-bold text-5xl text-blue-500'>Crie sua conta!</h1>
-      <p>Já esta registrado? <span className="underline">Login</span></p>
+      <p>Já esta registrado? <Link to="/login" className="underline">Login</Link></p>
 
       <form
       onSubmit={handleSubmit(onSubmit)}
@@ -46,7 +47,7 @@ function SignUp() {
           </div>
         </div>
 
-        <button className="px-8 py-2 bg-blue-500 text-white rounded" type="submit">Cadastrar</button>
+        <Link to="/dashboard" className="px-8 py-2 bg-blue-500 text-white rounded" type="submit">Cadastrar</Link>
       </form>
     </div>
   )
