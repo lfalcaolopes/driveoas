@@ -1,6 +1,6 @@
 
 import { ShareNetwork, Trash } from "@phosphor-icons/react"
-import FileCover from "../../assets/fileCover.png"
+import FileCover from "../../assets/FileCover.png"
 
 
 function TrashFiles() {
