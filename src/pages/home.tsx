@@ -7,8 +7,32 @@ import SharedFiles from "../components/homeComponents/sharedFiles"
 import TrashFiles from "../components/homeComponents/trashFiles"
 import SearchBar from "../components/searchBar"
 import UnderConstruction from "../components/underConstruction"
+import { useState } from "react";
 
 function Home() {
+  const [documentos, setDocumentos] = useState(
+    [
+      {
+        titulo: "Drive OA'",
+        imagem: '../.././public/FileCover.png'
+      },
+      {
+        titulo: "TCC",
+        imagem: 'https://media.discordapp.net/attachments/1114683805635199193/1175572363321036931/image.png?ex=656bb814&is=65594314&hm=8023200ca7e8fc07e37c33b0b50bb9c05da6c07f7bc8e202ea4ba2e57549bad7&=&width=496&height=670'
+      }
+    ]
+  );
+
+  interface documento {
+    "titulo": string,
+    "imagem": string
+  }
+  function receberDocumentos(documento: documento){
+    let dadosNovos = documentos
+    dadosNovos.push(documento)
+    setDocumentos(dadosNovos)
+  }
+
 
   return (
     <div className="h-screen w-screen flex">
@@ -34,10 +58,10 @@ function Home() {
 
             <Routes>
               <Route path="/" element={<Placeholder />} />
-              <Route path="upload" element={<FileUpload />} />
-              <Route path="myFiles" element={<MyFiles />} />
+              <Route path="upload" element={<FileUpload enviarDocumentos={receberDocumentos} />} />
+              <Route path="myFiles" element={<MyFiles documentos={documentos} />} />
               <Route path="trash" element={<TrashFiles />} />
-              <Route path="sharedFiles" element={<SharedFiles />} />
+              <Route path="sharedFiles" element={<SharedFiles documentos={documentos} />} />
               <Route path="underConstruction" element={<UnderConstruction />} />
             </Routes>
           </div>
