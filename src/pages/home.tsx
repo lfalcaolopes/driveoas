@@ -13,12 +13,12 @@ function Home() {
   const [documentos, setDocumentos] = useState(
     [
       {
-        titulo: "Drive OA'",
-        imagem: '../../../public/FileCover.png'
+        titulo: "Drive OA's",
+        imagem: 'https://media.discordapp.net/attachments/1010966461994500138/1175941819150913566/FileCover.png?ex=656d1029&is=655a9b29&hm=63d30bed3d00de4c6068fb657dbbbc91fbf0bd0c1d388c39ca973cf14bf4e5c9&=&width=456&height=456'
       },
       {
         titulo: "TCC",
-        imagem: 'https://media.discordapp.net/attachments/1114683805635199193/1175572363321036931/image.png?ex=656bb814&is=65594314&hm=8023200ca7e8fc07e37c33b0b50bb9c05da6c07f7bc8e202ea4ba2e57549bad7&=&width=496&height=670'
+        imagem: 'https://media.discordapp.net/attachments/1010966461994500138/1175941819150913566/FileCover.png?ex=656d1029&is=655a9b29&hm=63d30bed3d00de4c6068fb657dbbbc91fbf0bd0c1d388c39ca973cf14bf4e5c9&=&width=456&height=456'
       }
     ]
   );

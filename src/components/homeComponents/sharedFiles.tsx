@@ -22,7 +22,8 @@ export default function SharedFiles({ documentos }: MyFilesProps) {
       <h1 className="text-3xl font-bold text-blue-700">Compartilhados comigo</h1>
 
 
-      {docs.map((documento, index) => (
+      <div className="flex gap-8">
+        {docs.map((documento, index) => (
           <div>
             <div
               key={index}
@@ -48,6 +49,7 @@ export default function SharedFiles({ documentos }: MyFilesProps) {
             </div>
           </div>
         ))}
+      </div>
     </div>
   )
 }
