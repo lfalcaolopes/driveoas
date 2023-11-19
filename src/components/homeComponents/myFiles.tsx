@@ -24,7 +24,7 @@ export default function MyFiles({ documentos }: MyFilesProps) {
 
         <div className="flex gap-8">
         {docs.map((documento, index) => (
-          <div>
+          <div id="documento">
             <div
               key={index}
               className="bg-slate-100 p-4 rounded-2xl text-slate-800 w-80 flex flex-col gap-4 cursor-pointer"
@@ -38,7 +38,7 @@ export default function MyFiles({ documentos }: MyFilesProps) {
                 <p className="font-bold ">{documento.titulo}</p>
 
                 <div className="flex items-center gap-4">
-                  <Trash size={20} weight="bold" className="cursor-pointer" onClick={() => removeDocumento(documento)} />
+                  <Trash size={20} weight="bold" className="cursor-pointer" id="trash" onClick={() => removeDocumento(documento)} />
                   <ShareNetwork
                     size={20}
                     weight="bold"
