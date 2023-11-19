@@ -1,4 +1,5 @@
 import { List } from "@phosphor-icons/react"
+import { useState } from "react"
 import { Link, Route, Routes } from "react-router-dom"
 import FileUpload from "../components/homeComponents/fileUpdoad"
 import MyFiles from "../components/homeComponents/myFiles"
@@ -7,14 +8,13 @@ import SharedFiles from "../components/homeComponents/sharedFiles"
 import TrashFiles from "../components/homeComponents/trashFiles"
 import SearchBar from "../components/searchBar"
 import UnderConstruction from "../components/underConstruction"
-import { useState } from "react";
 
 function Home() {
   const [documentos, setDocumentos] = useState(
     [
       {
         titulo: "Drive OA'",
-        imagem: '../.././public/FileCover.png'
+        imagem: '../../../public/FileCover.png'
       },
       {
         titulo: "TCC",
@@ -28,7 +28,7 @@ function Home() {
     "imagem": string
   }
   function receberDocumentos(documento: documento){
-    let dadosNovos = documentos
+    const dadosNovos = documentos
     dadosNovos.push(documento)
     setDocumentos(dadosNovos)
   }
