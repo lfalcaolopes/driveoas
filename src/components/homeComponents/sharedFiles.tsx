@@ -1,5 +1,4 @@
-import { ShareNetwork, Trash } from "@phosphor-icons/react"
-import FileCover from "../../assets/FileCover.png"
+import { ShareNetwork, Trash } from "@phosphor-icons/react";
 import { useState } from "react";
 
 interface Documento {

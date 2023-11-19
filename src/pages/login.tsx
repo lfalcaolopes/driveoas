@@ -1,5 +1,5 @@
-import { SubmitHandler, useForm } from "react-hook-form";
-import { Link, useNavigate   } from "react-router-dom";
+import { useForm } from "react-hook-form";
+import { useNavigate } from "react-router-dom";
 import Header from "../components/Header";
 
 

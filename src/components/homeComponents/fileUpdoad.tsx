@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 interface Documento {
   titulo: string;
   imagem: string;
 }
 
-export default function FileUpload({ enviarDocumentos }: any) {
+export default function FileUpload({ enviarDocumentos }: {enviarDocumentos: (documento: Documento) => void}) {
   const [dadosParaEnviar, setDadosParaEnviar] = useState("");
 
   function enviarDados() {
